@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.copa-section {
+    padding: 30px 15%;
+    background-color: #2D25A0;
+}
+
+.coach-section {
+    margin: 30px 15%;
+}
+
+.couch-title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.copa-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.copa-text {
+    font-size: 30px;
+    color: white;
+}
+
+.copa-img img {
+    width: 100%;
+}
+
+.live-btn {
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    transition: transform 2s;
+}
+
+.live-btn:hover {
+    transform: scale(1.2);
+}
+
+.players-container {
+    margin: 100px 10%;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.player {
+    box-shadow: 10px 10px 50px lightgray;
+    padding: 20px;
+}
+
+.player P {
+    color: gray;
+}
+
+.player img {
+    width: 100%;
+}
+
+footer {
+    margin: 20px 20%;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 50%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons img {
+    margin: 10px;
+    width: 50px;
+}
+
+.couches {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.couch {
+    box-shadow: 10px 10px 50px lightgray;
+    padding: 20px;
+}
+
+.couch img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .copa-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .copa-text {
+        margin-bottom: 50px;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .couches {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
